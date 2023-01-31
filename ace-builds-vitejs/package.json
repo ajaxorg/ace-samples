@@ -2,7 +2,7 @@
   "name": "ace-builds-vitejs",
   "version": "1.0.0",
   "scripts": {
-    "generate-resolver": "node extensionLoader.js",
+    "generate-resolver": "node resolver-generator.js",
     "dev": "vite",
     "build": "vite build"
   },
