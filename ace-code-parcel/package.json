@@ -1,0 +1,12 @@
+{
+  "name": "ace-code-vitejs",
+  "version": "1.0.0",
+  "scripts": {
+    "generate-resolver": "node resolver-generator.js",
+    "start": "parcel ./index.html"
+  },
+  "devDependencies": {
+    "ace-code": "^1.15.0",
+    "parcel": "^2.8.3"
+  }
+}
