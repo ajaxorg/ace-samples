@@ -1,0 +1,15 @@
+{
+  "name": "ace-samples",
+  "version": "1.0.0",
+  "scripts": {
+    "esm-resolver-generate": "node esm-resolver-generator.js",
+    "module-resolver-generate": "node module-resolver-generator.js"
+  },
+  "workspaces": [
+    "./samples/*"
+  ],
+  "devDependencies": {
+    "buffer": "^5.7.1",
+    "process": "^0.11.10"
+  }
+}

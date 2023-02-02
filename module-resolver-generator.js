@@ -5,10 +5,10 @@ function buildResolver() {
     var moduleNames = getModuleNames();
     var loader = "//this file is auto-generated\nimport ace from \"ace-code\";\n";
     loader = loader + moduleNames.map(function (moduleName) {
-        return `ace.config.setModuleLoader('${moduleName}', () => import('../${BUILD_DIR}/${moduleName.replace("ace", "src") + ".js"}'))`;
-    }).join('\n') + "\n\nexport * from \"ace-code\";";
+        return `ace.config.setModuleLoader('${moduleName}', () => import('./${BUILD_DIR}/${moduleName.replace("ace", "src") + ".js"}'))`;
+    }).join('\n') + "\n\nexport * as default from \"ace-code\";";
 
-    fs.writeFileSync(__dirname + '/src/esm-resolver.js', loader, "utf8");
+    fs.writeFileSync(__dirname + '/esm-resolver.js', loader, "utf8");
 }
 
 function jsFileList(path, filter) {

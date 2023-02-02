@@ -1,5 +1,5 @@
 import ace from 'ace-builds';
-import './esm-resolver';
+import '../../../generated/esm-resolver';
 //^ you could use direct imports instead like
 //import 'ace-builds/src-noconflict/mode-html'; for HTML mode
 //or import "ace-builds/src-noconflict/theme-eclipse.js"; for theme

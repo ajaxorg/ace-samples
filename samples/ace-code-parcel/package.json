@@ -1,13 +1,12 @@
 {
-  "name": "ace-builds-vitejs",
+  "name": "ace-code-parcel",
   "version": "1.0.0",
   "scripts": {
     "generate-resolver": "node resolver-generator.js",
-    "dev": "vite",
-    "build": "vite build"
+    "start": "parcel ./index.html"
   },
   "devDependencies": {
-    "ace-builds": "^1.14.0",
-    "vite": "^4.0.3"
+    "ace-code": "mkslanc/ace#resolver",
+    "parcel": "^2.8.3"
   }
 }

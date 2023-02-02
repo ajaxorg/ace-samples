@@ -1,4 +1,4 @@
-import * as ace from "./esm-resolver";
+import ace from "../../../generated/module-resolver";
 import "ace-code/src/ext/language_tools";
 
 let editor = ace.edit("container", {
