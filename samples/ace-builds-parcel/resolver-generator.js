@@ -17,7 +17,7 @@ function buildResolver() {
         }
     }).join('\n');
 
-    fs.writeFileSync(__dirname + '/src/esm-resolver.js', loader, "utf8");
+    fs.writeFileSync(__dirname + '/generated/esm-resolver.js', loader, "utf8");
 }
 
 buildResolver();

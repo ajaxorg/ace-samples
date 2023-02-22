@@ -2,11 +2,11 @@
   "name": "ace-code-parcel",
   "version": "1.0.0",
   "scripts": {
-    "generate-resolver": "node resolver-generator.js",
     "start": "parcel ./index.html"
   },
   "devDependencies": {
     "ace-code": "mkslanc/ace#resolver",
+    "ace-linters": "^0.4.1",
     "parcel": "^2.8.3"
   }
 }
