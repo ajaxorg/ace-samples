@@ -1,5 +1,5 @@
 import ace from "ace-builds";
-import "../../../generated/esm-resolver";
+import "ace-builds/esm-resolver";
 import "ace-builds/src-noconflict/ext-language_tools";
 import {LanguageProvider} from "ace-linters";
 

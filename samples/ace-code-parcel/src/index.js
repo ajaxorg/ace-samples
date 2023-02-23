@@ -1,4 +1,4 @@
-import ace from "../../../generated/module-resolver";
+import ace from "ace-code/esm-resolver";
 import "ace-code/src/ext/language_tools";
 import {LanguageProvider} from "ace-linters";
 

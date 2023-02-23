@@ -1,12 +1,12 @@
 import ace from 'ace-builds';
-import '../../../generated/esm-resolver';
+import 'ace-builds/esm-resolver';
 //^ you could use direct imports instead like
 //import 'ace-builds/src-noconflict/mode-html'; for HTML mode
 //or import "ace-builds/src-noconflict/theme-eclipse.js"; for theme
 
 import {LanguageProvider} from "ace-linters";
 
-let worker = new Worker(new URL('./webworker.js', import.meta.url));
+let worker = new Worker(new URL('./webworker.js', import.meta.url), {type: "module"});
 let languageProvider = LanguageProvider.create(worker);
 
 let editor = ace.edit("container", {

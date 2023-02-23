@@ -2,11 +2,10 @@
   "name": "ace-builds-parcel",
   "version": "1.0.0",
   "scripts": {
-    "generate-resolver": "node resolver-generator.js",
     "start": "parcel ./index.html"
   },
   "devDependencies": {
-    "ace-builds": "^1.15.0",
+    "ace-builds": "mkslanc/ace-builds#resolver-demo",
     "ace-linters": "^0.4.1",
     "buffer": "^5.7.1",
     "parcel": "^2.8.3",

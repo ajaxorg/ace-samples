@@ -1,11 +1,13 @@
 {
   "name": "ace-samples",
   "version": "1.0.0",
-  "scripts": {
-    "esm-resolver-generate": "node esm-resolver-generator.js",
-    "module-resolver-generate": "node module-resolver-generator.js"
-  },
   "workspaces": [
     "./samples/*"
-  ]
+  ],
+  "dependencies": {
+    "ace-code": "mkslanc/ace#demo_resolver"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
 }

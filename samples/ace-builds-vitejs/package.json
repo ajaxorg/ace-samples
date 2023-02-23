@@ -7,7 +7,8 @@
   },
   "devDependencies": {
     "ace-linters": "^0.4.1",
-    "ace-builds": "^1.15.0",
+    "ace-builds": "mkslanc/ace-builds#resolver-demo",
     "vite": "^4.0.3"
-  }
+  },
+  "type": "module"
 }

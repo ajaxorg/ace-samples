@@ -1,5 +1,5 @@
 import ace from 'ace-builds';
-import '../../../generated/esm-resolver-parcel';
+import 'ace-builds/esm-resolver';
 import "ace-builds/src-noconflict/ext-language_tools"; //to turn on autocomplete
 import {LanguageProvider} from "ace-linters";
 
