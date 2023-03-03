@@ -5,7 +5,7 @@
     "start": "parcel ./index.html"
   },
   "devDependencies": {
-    "ace-builds": "mkslanc/ace-builds#resolver-demo",
+    "ace-builds": "^1.15.3",
     "ace-linters": "^0.4.1",
     "buffer": "^5.7.1",
     "parcel": "^2.8.3",

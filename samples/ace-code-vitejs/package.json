@@ -1,5 +1,5 @@
 {
-  "name": "ace-builds-vitejs",
+  "name": "ace-code-vitejs",
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
@@ -7,7 +7,7 @@
   },
   "devDependencies": {
     "ace-linters": "^0.4.1",
-    "ace-builds": "^1.15.3",
+    "ace-code": "^1.15.3",
     "vite": "^4.0.3"
   },
   "type": "module"

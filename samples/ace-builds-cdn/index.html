@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ace-builds-cdn</title>
+</head>
+	<body>
+	<div id="container" style="height: 100px"></div>
+	<script src="https://www.unpkg.com/ace-builds/src-noconflict/ace.js"></script>
+	<script src="https://www.unpkg.com/ace-builds/src-noconflict/ext-language_tools.js"></script>
+	<script src="https://www.unpkg.com/ace-linters/build/ace-linters.js"></script>	
+	<script>
+		var editor = ace.edit("container", {
+			useWorker: false,
+			theme: "ace/theme/eclipse",
+			mode: "ace/mode/html",
+			enableBasicAutocompletion: true,
+			enableSnippets: true,
+			enableLiveAutocompletion: true,
+			value: "<htm l>\n    <h1>Hello world!</h1>\n</html>"
+		});
+
+
+		function $workerBlob(script) {
+			return new Blob([script.toString()], {"type": "application/javascript"});
+		}
+
+		function createWorker(script) {
+			if (typeof Worker == "undefined") return {
+				postMessage: function () {
+				},
+				terminate: function () {
+				}
+			};
+
+			var blob = $workerBlob(script);
+			var URL = window.URL || window.webkitURL;
+			var blobURL = URL.createObjectURL(blob);
+			// calling URL.revokeObjectURL before worker is terminated breaks it on IE Edge
+			return new Worker(blobURL);
+		}
+
+		let worker = createWorker("!" + function () {
+			importScripts("https://www.unpkg.com/ace-linters/build/service-manager.js");
+			let manager = new ServiceManager(self);
+			manager.registerService("json", {
+				module: () => {
+					importScripts("https://www.unpkg.com/ace-linters/build/json-service.js");
+					return {JsonService};
+				},
+				className: "JsonService",
+				modes: "json|json5"
+			});
+			manager.registerService("json", {
+				module: () => {
+					importScripts("https://www.unpkg.com/ace-linters/build/html-service.js");
+					return {HtmlService};
+				},
+				className: "HtmlService",
+				modes: "html"
+			});
+		} + "();");
+
+
+		//create Language Provider for json doc from ace linters
+		let languageProvider = LanguageProvider.create(worker);
+		languageProvider.registerEditor(editor);
+	</script>
+
+	</body>
+</html>
