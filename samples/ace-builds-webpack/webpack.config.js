@@ -1,4 +1,5 @@
 "use strict";
+var path = require("path")
 const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = (env, argv) => {
@@ -36,6 +37,12 @@ module.exports = (env, argv) => {
                     {
                         from: "index.html",
                         to: "."
+                    },
+                    {
+                        from: path.dirname(require.resolve('ace-builds/src-noconflict/ace')),
+                        to:'./ace-modules',
+                        filter: resourcePath =>
+                            /worker-yaml\.js$/.test(resourcePath)                            
                     }
                 ]
             })
