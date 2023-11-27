@@ -1,6 +1,6 @@
-import ace from 'ace-builds';
-import 'ace-builds/esm-resolver';
-import "./chrome.css.js"
+import ace from 'ace-code';
+import 'ace-code/esm-resolver';
+
 //^ you could use direct imports instead like
 //import 'ace-builds/src-noconflict/mode-html'; for HTML mode
 //or import "ace-builds/src-noconflict/theme-eclipse.js"; for theme
