@@ -2,6 +2,7 @@
   "name": "ace-builds-parcel",
   "version": "1.0.0",
   "scripts": {
+    "build": "parcel build ./index.html --public-url ./",
     "start": "parcel ./index.html"
   },
   "devDependencies": {
