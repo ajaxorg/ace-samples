@@ -2,14 +2,7 @@
   "name": "ace-samples",
   "version": "1.0.0",
   "scripts": {
-    "build:ace-builds-parcel": "cd samples/ace-builds-parcel && npm run build",
-    "build:ace-builds-vitejs": "cd samples/ace-builds-vitejs && npm run build",
-    "build:ace-builds-webpack": "cd samples/ace-builds-webpack && npm run build",
-    "build:ace-code-parcel": "cd samples/ace-code-parcel && npm run build",
-    "build:ace-code-vitejs": "cd samples/ace-code-vitejs && npm run build",
-    "build:ace-code-webpack": "cd samples/ace-code-webpack && npm run build",
-    "build:react-ace-example": "cd samples/react-ace-example && npm run build",
-    "build": "npm run build:ace-builds-parcel && npm run build:ace-builds-vitejs && npm run build:ace-builds-webpack && npm run build:ace-code-parcel && npm run build:ace-code-vitejs && npm run build:ace-code-webpack && npm run build:react-ace-example",
+    "build": "npm run build -w samples",
     "start-test-server": "http-server --cors='*' samples",
     "test": "mocha --timeout=5000"
   },
