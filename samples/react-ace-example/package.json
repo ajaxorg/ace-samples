@@ -10,7 +10,7 @@
   },
   "type": "module",
   "dependencies": {
-    "ace-builds": "^1.16.0",
+    "ace-builds": "latest",
     "react": "^18.2.0",
     "react-ace": "^10.1.0",
     "react-dom": "^18.2.0"

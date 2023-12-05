@@ -6,7 +6,7 @@
     "start": "webpack-dev-server"
   },
   "devDependencies": {
-    "ace-builds": "^1.15.3",
+    "ace-builds": "latest",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1",

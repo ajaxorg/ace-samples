@@ -10,15 +10,16 @@
     "./samples/*"
   ],
   "dependencies": {
-    "ace-builds": "^1.31.2",
-    "ace-code": "^1.31.2",
-    "ace-linters": "^1.0.3",
+    "ace-builds": "latest",
+    "ace-code": "latest",
+    "ace-linters": "latest",
     "typescript": "^5.3.2"
   },
   "devDependencies": {
     "@types/chai": "^4.3.4",
     "@types/mocha": "^5.2.7",
     "chai": "^4.3.7",
+    "http-server": "^14.1.1",
     "mocha": "^10.2.0",
     "process": "^0.11.10",
     "puppeteer": "^19.9.1",

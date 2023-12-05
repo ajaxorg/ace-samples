@@ -6,7 +6,7 @@
     "start": "parcel ./index.html"
   },
   "devDependencies": {
-    "ace-code": "^1.15.3",
+    "ace-code": "latest",
     "parcel": "^2.8.3"
   }
 }

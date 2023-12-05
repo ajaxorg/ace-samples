@@ -1,0 +1,12 @@
+{
+  "name": "ace-builds-cdn",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo",
+    "build": "echo",
+    "start": "echo"
+  },
+  "devDependencies": {
+    "ace-builds": "latest"
+  }
+}
