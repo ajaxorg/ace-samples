@@ -28,6 +28,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm i
+    - run: |
+        # github actions run out of memory trying to compile these huge files
+        for i in node_modules/ace-builds/src*/{mode,worker}-{xquery,jsoniq}.js; do
+            echo "" > "$i"
+        done
     - run: npm run build
     - run: npm run start-test-server && npm run test
     
