@@ -1,0 +1,37 @@
+{
+    "compilerOptions": {
+        // Recommended by the documentation
+        "alwaysStrict": true,
+        // "exactOptionalPropertyTypes": true,  // Good in theory, bad in practice
+        "strict": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true,
+
+        // Others
+        "lib": ["DOM"],
+        "target": "ES6", // output ES Modules
+        // "isolatedModules": true, // "Setting the isolatedModules flag tells TypeScript to warn you if you write certain code that can’t be correctly interpreted by a single-file transpilation process."
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "declaration": true, // emit *.d.ts files
+        "declarationMap": true,
+        "sourceMap": true,
+        "jsx": "react",
+        "outDir": ".lib/",
+        "moduleResolution": "node",
+        "baseUrl": ".",
+        "paths": {
+            "src/*": [
+                "src/*"
+            ],
+            "tests/*": [
+                "tests/*"
+            ]
+        }
+    },
+    "include": [ "src/**/*"  ],
+    "exclude": [
+        "node_modules/**/*"
+    ]
+}

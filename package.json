@@ -1,14 +1,26 @@
 {
   "name": "ace-samples",
   "version": "1.0.0",
+  "scripts": {
+    "build": "npm run build -w samples",
+    "start-test-server": "http-server --cors='*' samples",
+    "test": "mocha --timeout=5000"
+  },
   "workspaces": [
     "./samples/*"
   ],
   "dependencies": {
-    "ace-builds": "^1.15.3",
-    "ace-code": "^1.15.3"
+    "ace-builds": "^1.31.2",
+    "ace-code": "^1.31.2",
+    "typescript": "^5.3.2"
   },
   "devDependencies": {
-    "process": "^0.11.10"
+    "@types/chai": "^4.3.4",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "process": "^0.11.10",
+    "puppeteer": "^19.9.1",
+    "rimraf": "^5.0.1"
   }
 }
