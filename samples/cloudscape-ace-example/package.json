@@ -1,0 +1,23 @@
+{
+  "name": "cloudscape-ace-example",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@cloudscape-design/components": "^3.0.339",
+    "ace-builds": "1.30.0",
+    "ace-code": "1.30.0",
+    "file-loader": "6.2.0",
+    "next": "canary",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.13",
+    "@types/react": "^18.0.26",
+    "typescript": "^4.9.4"
+  }
+}
