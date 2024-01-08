@@ -8,8 +8,8 @@
   },
   "dependencies": {
     "@cloudscape-design/components": "^3.0.339",
-    "ace-builds": "1.30.0",
     "ace-code": "1.30.0",
+    "ace-linters": "^1.0.3",
     "file-loader": "6.2.0",
     "next": "canary",
     "react": "^18.2.0",
