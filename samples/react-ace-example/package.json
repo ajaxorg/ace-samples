@@ -6,7 +6,6 @@
     "build": "vite build --base ./"
   },
   "devDependencies": {
-    "ace-linters": "^0.4.1",
     "vite": "^4.0.3"
   },
   "type": "module",
