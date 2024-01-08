@@ -12,6 +12,7 @@
   "dependencies": {
     "ace-builds": "^1.31.2",
     "ace-code": "^1.31.2",
+    "ace-linters": "^1.0.3",
     "typescript": "^5.3.2"
   },
   "devDependencies": {

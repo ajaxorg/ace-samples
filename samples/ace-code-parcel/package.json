@@ -7,7 +7,6 @@
   },
   "devDependencies": {
     "ace-code": "^1.15.3",
-    "ace-linters": "^0.4.1",
     "parcel": "^2.8.3"
   }
 }
