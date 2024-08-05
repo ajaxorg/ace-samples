@@ -19,7 +19,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [20.x]
 
     steps:
     - uses: actions/checkout@v2
@@ -28,6 +28,14 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm i
-    - run: npm run build
-    - run: npm run start-test-server && npm run test
+    - run: |
+        for i in samples/*; do 
+          pushd $i || continue; 
+          echo --- $i;  
+          npm i; 
+          npm run build; 
+          popd;  
+        done
+    - run: npm run start-test-server & npm run test; kill %1
+
     
