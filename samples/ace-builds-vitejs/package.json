@@ -6,7 +6,7 @@
     "build": "vite build"
   },
   "devDependencies": {
-    "ace-builds": "^1.15.3",
+    "ace-builds": "^1.36.2",
     "vite": "^4.0.3"
   },
   "type": "module"
